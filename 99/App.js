@@ -12,8 +12,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import appImages from "./constants/appImages";
 import appColors from "./constants/colors";
-import appIcons from "./constants/appIcons";
-import HomeStack from "./HomeStack";
+import TrafficLaws from "./screens/trafficlawscreen/TrafficLaws";
+import TipScreen from "../99/screens/tipScreen/TipScreen";
+import TrafficSigns from "./screens/trafficSigns/TrafficSigns";
+
+const Stack = createStackNavigator();
 
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 const SCREEN_WIDTH = Dimensions.get("window").width;

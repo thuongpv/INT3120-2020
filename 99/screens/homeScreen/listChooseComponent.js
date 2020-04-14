@@ -41,14 +41,17 @@ export default function ({ navigation }) {
         />
         <Text style={{ paddingTop: 5 }}>HỌC LÝ THUYẾT</Text>
       </View>
-      <View style={styles.item}>
+      <TouchableOpacity 
+      style={styles.item}
+      onPress={() => navigation.navigate("trafficSigns")}
+      >
         <Image
           source={appIcons.icon_bienbao}
           style={styles.iconStyle}
           resizeMode="stretch"
         />
         <Text style={{ paddingTop: 5 }}>BIỂN BÁO ĐƯỜNG BỘ</Text>
-      </View>
+      </TouchableOpacity>
 
       {/* <View style={styles.item}>
         <Image
